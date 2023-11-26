@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MidyAI MidyAI Speech to Text</title>
+    <!-- IONICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- SCRIPT -->
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="options">
+        <p class="heading">MidyAI Notetaker</p>
+        <div class="language">
+          <select name="input-language" id="language">
+            <option value="system">System Audio</option>
+          </select>
+        </div>
+        <button class="btn record">
+          <div class="icon">
+            <ion-icon name="mic-outline"></ion-icon>
+            <img src="bars.svg" alt="" />
+          </div>
+          <p>Start Listening</p>
+        </button>
+        <div class="alternate-method">
+          <div class="line"></div>
+          <span>OR</span>
+          <div class="line"></div>
+        </div>
+        <form class="link-to-text">
+          <input type="url" name="audio" id="audio-link" />
+          <button class="btn">
+            <p>Convert</p>
+          </button>
+        </form>
+        <div class="alternate-method">
+          <div class="line"></div>
+          <span>OR</span>
+          <div class="line"></div>
+        </div>
+        <button class="btn audio-file-to-text">
+          <div class="icon">
+            <ion-icon name="cloud-upload-outline"></ion-icon>
+          </div>
+          <p>Upload a MP3/MP4 File</p>
+        </button>
+      </div>
+
+      <div
+        class="result"
+        spellcheck="false"
+        placeholder="Text will be shown here"
+      >
+        <p class="heading">Result :</p>
+        <div class="interim"></div>
+      </div>
+      <div class="buttons">
+        <button class="btn clear">
+          <ion-icon name="trash-outline"></ion-icon>
+          <p>Clear</p>
+        </button>
+        <button class="btn download" disabled>
+          <ion-icon name="cloud-download-outline"></ion-icon>
+          <p>Download</p>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
