@@ -37,7 +37,7 @@ async function sendFileToWhisperAPI(file, language = "en") {
       method: "POST",
       headers: {
         Authorization:
-          "Bearer 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",
+          "Bearer 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",
       },
       body: formData,
     }
